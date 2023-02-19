@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    font-family: Arial;
+    background-color: black;
+  }
+
+
+  .section-1 {
+    background-color: #4912F6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+  } 
+
+  input[type='button'] {
+    padding: 7px 20px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 20px;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+
+  .headline-1 {
+    font-size: 26px;
+  }
+
+
+
+
+
