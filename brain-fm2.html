@@ -6,122 +6,188 @@
 
     <style>
         body {
-        height: 100%;
-        min-width: 320px;
-        width: 75%;
-        margin: 0px auto;
-        padding: 0px;
-        font-size: 18px;
-        font-family: Arial;
-        background-color: black;
+            background-color: black;
+            height: 100%;
+            min-width: 320px;
+            width: 75%;
+            margin: 0px auto;
+            padding: 0px;
+            font-size: 18px;
+            font-family: Arial;
         }
 
         .flex-container-1 {
-        background-color: #4912F6;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 15px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 18px;
+            background-color: #4912F6;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 200px;
+            font-size: 18px;
         }
 
-        .section-1 {
+        .flex-container-2 {
+            background-color: #4912F6;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 18px;
+        }
 
+        .flex-container-3 {
+            background-color: #4912F6;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 18px;
+            justify-content: center;
+        }
+
+        .flex-container-4 {
+            background-color: #4912F6;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+/*            display: flex;
+            flex-direction: row;
+            align-items: center; */
+            padding: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 16px;
+            justify-content: center;
+        }
+
+        .headline-1 {
+            flex-grow: 83;
+        }
+
+        .headline-2 {
+            flex-grow: 2;
+        }
+
+        .headline-3 {
+            flex-grow: 15;
+        }
+
+        .headline-4 {
+            flex: 0 1 500px; 
+            z-index: 1; 
+            margin-right: -80px; 
+            height: 250px;
+        }
+
+        .headline-5 {
+            flex: 0 1 800px; 
+            z-index: 0;
+        }
+
+        .headline-6 {
+            flex: 0 40%; 
+        }
+
+        .headline-7 {
+        /*    flex: 0 50%;
+            align-self: center;
+            justify-content: center; */ 
+            width: 600px;
+            height: 600px;
+        }
+
+        .headline-8 {
+        /*    flex: 0 50%; 
+            align-self: center;
+            justify-content: center; */
+            width: 600px;
+            height: 600px;
         }
 
         input[type='button'] {
-        padding: 15px 25px;
-        font-weight: bold;
-        white-space: normal;
-        border: 0px;
-        border-radius: 25px;
-        font-size: 18px;
-        width: 210px;
+            background-color: #ed8239; 
+            color: #FFFFFF; 
+            padding: 15px 25px;
+            font-weight: bold;
+            white-space: normal;
+            border: 0px;
+            font-size: 18px;
+            width: 210px;
+    /*        border-radius: 25px; */
+            border-radius: 50px;
         }
 
         a:visited {
-        color: white;
+            color: white;
         }
   
         a:hover {
-        color: white;
+           color: white;
         }
-       
     </style>
 
 </head>
   <body>
 
     <div class="flex-container-1">    
-        <div style="flex-grow: 83;">
+        <div class="headline-1">
             <img src="./images/logo.png" style="width: 130px;" />
         </div>
-        <div style="flex-grow: 2;">
+        <div class="headline-2">
             <a style="text-decoration: none" href="">Sign In</a>
         </div>
-        <div style="flex-grow: 15;">
-            <input type="button" value="Try for free" style="background-color: #ed8239; color: #FFFFFF; width: 150px;"/>
+        <div class="headline-3">
+            <input type="button" value="Try for free" style="width: 150px;"/>
         </div>
-    </div>
+    </div><!--This area is good-->
 
     <div class="flex-container-2">
+        <div class="headline-4">
+            <p style="font-size: 34px; margin: 0px;">Functional Music to Improve</p>
+            <p style="font-size: 40px; margin: 10px 0px 20px;"><b>Focus in 15 Minutes</b></p>
+            <p style="font-size: 18px; margin: 20px 0px; color: #c7B4FC;">Our science-first approach creates music that sounds different-and affects your brain differently-than any other music.</p>
+            <p style="font-size: 9px; padding-top: 10px; padding-bottom: 20px;">FEATURED IN<br><br><img src="./images/clout.png" /></p>
+            <input type="button" value="Try 5 free sessions">
+        </div>
+        <div class="headline-5">
+            <img src="./images/picture-1.gif" style="width: 100%"/>
+        </div>
+    </div><!--This area is good-->
 
-        
+    <div class="flex-container-3">
+        <div class="headline-6">
+            <p style="padding: 150px; justify-content: center; margin: 0 auto;"><b>Wanna see the science?</b></p>
+        </div>
+    </div><!--This area is good-->
+
+    <div class="flex-container-4">
+        <div class="headline-7">
+            <img src="./images/picture-2.gif" style="width: 60%;" />
+            <br><br><b>Patented Technology</b>
+            <br><br>Brain.fm holds patents on key processes for creating functional music, including technology to elicit <b>strong neural phase locking</b>-allowing populations of neurons to engage in various kinds 
+            of coordinated activity-and technology to remove distraction in sound.
+            <br><br>This makes our music unique, purpose-built to steer you into a desired mental state.  In other words, we've found new ways to create music that helps you do what you need to do.
+            <br><br><b>Explore More of Our Science</b>
+        </div>
+        <div class="headline-8">
+            <img src="./images/picture-3.png" style="width: 60%;" />
+            <br><br><br><b>Tested on Brain and Behavior</b>
+            <br><br>Scientist at Brain.fm work with collaborators at academic institutions to run experiments.
+            <br><br>We look at the effects of our technology on the brain, using fMRI and EEG, and also run large-scale behavioral tests, measuring performanace on simple games.
+            <br><br><b>Our experiments always include a control condition ("placebo")</b> of the same underlying music without Brain.fm technology applied, so we can be sure our tech is what makes the difference.
+        </div>
     </div>
-
-
-
-
-    <!--        
-        <div class="section-1" style="justify-content: center;">
-            <div style="flex: 0 1 550px; z-index: 1; margin-right: -60px;">
-                <p class="headline-1">Functional Music to Improve</p>
-                <p class="headline-2"><b>Focus in 15 Minutes</b></p>
-                <p style="color: #c7B4FC;">Our science-first approach creates music that sounds different-and affects your brain differently-than any other music.</p>
-                <p style="font-size: 9px; padding-top: 10px; padding-bottom: 20px;">FEATURED IN<br><img src="./images/clout.png" /></p>
-                <input type="button" value="Try 5 free sessions" style="background-color: #ed8239; color: #FFFFFF; border-radius: 50px;">
-            </div>
-
-            <div style="flex: 0 1 800px; z-index: 0;">
-                <img src="./images/picture-1.gif" style="width: 100%"/>
-            </div>
-        </div>
-
-
-        <div class="section-1" style="justify-content: center;">
-            <div style="flex: 0 40%;">
-                <p style="padding: 150px; justify-content: center; margin: 0 auto;"><b>Wanna see the science?</b></p>
-            </div>
-        </div>
-
-
-        <div class="section-2" style="justify-content: center;">
-            <div style="flex-grow: 50;">
-                <img src="./images/picture-2.gif" style="width: 60%;" />
-                <br><br><b>Patented Technology</b>
-                <br><br>Brain.fm holds patents on key processes for creating functional music, including technology to elicit <b>strong neural phase locking</b>-allowing populations of neurons to engage in various kinds 
-                of coordinated activity-and technology to remove distraction in sound.
-                <br><br>This makes our music unique, purpose-built to steer you into a desired mental state.  In other words, we've found new ways to create music that helps you do what you need to do.
-                <br><br><b>Explore More of Our Science</b>
-
-            </div>
-            <div style="flex-grow: 50;">
-                <img src="./images/picture-3.png" style="width: 60%;" />
-                <br><br><br><b>Tested on Brain and Behavior</b>
-                <br><br>Scientist at Brain.fm work with collaborators at academic institutions to run experiments.
-                <br><br>We look at the effects of our technology on the brain, using fMRI and EEG, and also run large-scale behavioral tests, measuring performanace on simple games.
-                <br><br><b>Our experiments always include a control condition ("placebo")</b> of the same underlying music without Brain.fm technology applied, so we can be sure our tech is what makes the difference.
-            </div>
-        </div>
--->
-
-
-
-
-
 
   </body>
 </html>
