@@ -60,15 +60,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-/*            display: flex;
-            flex-direction: row;
-            align-items: center; */
             padding: 0px;
             padding-left: 40px;
             padding-right: 40px;
             font-size: 16px;
-            justify-content: center;
+
+        }
+
+        .flex-container-4 > div {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            height: 530px;
+        }
+        .flex-container-4 > div > img {
+            align-self: center;
         }
 
         .headline-1 {
@@ -99,23 +105,7 @@
             flex: 0 40%; 
         }
 
-        .headline-7 {
-        /*    flex: 0 50%;
-            align-self: center;
-            justify-content: center; */ 
-            width: 600px;
-            height: 600px;
-        }
-
-        .headline-8 {
-        /*    flex: 0 50%; 
-            align-self: center;
-            justify-content: center; */
-            width: 600px;
-            height: 600px;
-        }
-
-        input[type='button'] {
+         input[type='button'] {
             background-color: #ed8239; 
             color: #FFFFFF; 
             padding: 15px 25px;
@@ -172,20 +162,20 @@
     </div><!--This area is good-->
 
     <div class="flex-container-4">
-        <div class="headline-7">
-            <img src="./images/picture-2.gif" style="width: 60%;" />
-            <br><br><b>Patented Technology</b>
-            <br><br>Brain.fm holds patents on key processes for creating functional music, including technology to elicit <b>strong neural phase locking</b>-allowing populations of neurons to engage 
-            in various kinds of coordinated activity-and technology to remove distraction in sound.
-            <br><br>This makes our music unique, purpose-built to steer you into a desired mental state.  In other words, we've found new ways to create music that helps you do what you need to do.
-            <br><br><p style="border-color: #FFFFFF; border-bottom: 5px;"><b>Explore More of Our Science</b></p>
+        <div>
+            <img src="./images/picture-2.gif" style="width: 65%;" />
+            <br><p style="font-size: 24px;"><b>Patented Technology</b></p>
+            <p style="width: 525px;">Brain.fm holds patents on key processes for creating functional music, including technology to elicit <b>strong neural phase locking</b>-allowing populations of neurons to engage 
+                in various kinds of coordinated activity-and technology to remove distraction in sound.</p>
+            <p style="width: 525px;">This makes our music unique, purpose-built to steer you into a desired mental state.  In other words, we've found new ways to create music that helps you do what you need to do.</p>
+            <p style="border-bottom: 4px solid #FFFFFF; width: 220px;"><b>Explore More of Our Science</b></p>
         </div>
-        <div class="headline-8">
+        <div>
             <img src="./images/picture-3.png" style="width: 60%;" />
-            <br><br><br><b>Tested on Brain and Behavior</b>
-            <br><br>Scientist at Brain.fm work with collaborators at academic institutions to run experiments.
-            <br><br>We look at the effects of our technology on the brain, using fMRI and EEG, and also run large-scale behavioral tests, measuring performanace on simple games.
-            <br><br><b>Our experiments always include a control condition ("placebo")</b> of the same underlying music without Brain.fm technology applied, so we can be sure our tech is what makes the difference.
+            <br><br><p style="font-size: 24px;"><b>Tested on Brain and Behavior</b></p>
+            <p style="width: 525px;">Scientist at Brain.fm work with collaborators at academic institutions to run experiments.</p>
+            <p style="width: 525px;">We look at the effects of our technology on the brain, using fMRI and EEG, and also run large-scale behavioral tests, measuring performanace on simple games.</p>
+            <p style="width: 525px;"><b>Our experiments always include a control condition ("placebo")</b> of the same underlying music without Brain.fm technology applied, so we can be sure our tech is what makes the difference.</p>
         </div>
     </div>
 
